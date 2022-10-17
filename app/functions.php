@@ -2,8 +2,10 @@
 include __DIR__ . '/env.php';
 
 $site = "Inside Out Asbestos";
-$phone_number = "1300 580 407";
+$phone_number = "0414 650 750";
 $admin_email = 'arijal@aiims.com.au';
+$facebook = 'arijal@aiims.com.au';
+$instagram = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';
 $recaptcha_client_secret = $client_secret;

@@ -1,5 +1,5 @@
-$primary: #803DD4;
-$secondary: #F9A51A;
+$primary: #283C78;
+$secondary: #EC5F2A;
 $tertiary: #ededed;
 $black: #000000;
 $white: #ffffff;
@@ -73,8 +73,10 @@ $utilities: (
 $utilities: map-merge(("line-height":(property: line-height,
                 class: lh,
                 responsive: true,
-                values: (1:1,
+                values: (
+                    1:1,
                     2:2,
+                    "08": 0.8,
                     3:1.29,
                     4:4,
                 )),
@@ -115,23 +117,18 @@ $utilities: map-merge(("line-height":(property: line-height,
             "font-size": (property: font-size,
                 class: fs,
                 responsive: true,
-                values: (128: 8rem,
-                    //128px
-                    96: 6rem,
-                    //96px
-                    64: 4rem,
-                    //64px
-                    36: 2.25rem,
-                    //36px
-                    32: 2rem,
-                    //32px
-                    24: 1.5rem,
-                    //24px
-                    20: 1.25rem,
-                    //20px
-                    18: 1.125rem,
-                    //18px
-                    16: 1rem,
-                    //16px
+                values: (
+                    150: 9.375rem, // 150px
+                    100: 6.25rem, // 100px
+                    128: 8rem, // 128px
+                    96: 6rem, // 96px
+                    64: 4rem, // 64px
+                    36: 2.25rem, // 36px
+                    32: 2rem, // 32px
+                    30: 1.875rem, // 30px
+                    24: 1.5rem, // 24px
+                    20: 1.25rem, // 20px
+                    18: 1.125rem, // 18px
+                    16: 1rem, // 16px
                 ))), $utilities
 );

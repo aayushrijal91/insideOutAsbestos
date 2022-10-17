@@ -10,7 +10,7 @@ body {
 }
 
 .btn {
-    height: 48px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,10 @@ body {
         box-shadow: none;
         outline: 0;
     }
+}
+
+.gradient-text-bg {
+    background: linear-gradient(rgba(0,0,0,0) 0 50%, $secondary 50% 100%);
 }
 
 // Rounded buttons
