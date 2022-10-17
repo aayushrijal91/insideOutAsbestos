@@ -3,9 +3,9 @@ $secondary: #EC5F2A;
 $tertiary: #ededed;
 $black: #000000;
 $white: #ffffff;
-$light: #f3f3f3;
+$light: #EEF0F4;
 $dark: #8B8B8B;
-$grey: #d9d9d9;
+$grey: #D2D7E5;
 
 $theme-colors: (
     ) !default;
@@ -95,6 +95,7 @@ $utilities: map-merge(("line-height":(property: line-height,
                     8:8px,
                     9:9px,
                     10:10px,
+                    15:15px,
                     20:20px,
                     circle: 50%,
                     pill: $border-radius-pill )),
@@ -122,7 +123,7 @@ $utilities: map-merge(("line-height":(property: line-height,
                     100: 6.25rem, // 100px
                     128: 8rem, // 128px
                     96: 6rem, // 96px
-                    64: 4rem, // 64px
+                    65: 4.0625rem, // 65px
                     36: 2.25rem, // 36px
                     32: 2rem, // 32px
                     30: 1.875rem, // 30px

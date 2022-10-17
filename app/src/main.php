@@ -90,6 +90,203 @@
     </div>
 </header>
 
+<section class="services bg-light">
+    <div class="container">
+        <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1">Services We Provide</div>
+        <ul class="nav nav-pills bg-grey rounded-15 p-2" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Residential Asbestos Removal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Commercial Asbestos Removal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Asbestos Inspection</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Asbestos Decontamination</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Asbestos Disposal</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="px-7">
+                            <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Residential Asbestos Removal</div>
+                            <div class="fs-20 py-3">If you notice even the slightest amount of asbestos in your home, you must remove it immediately. Don’t put your family or yourself at risk.</div>
+                            <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="px-7">
+                            <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Commercial Asbestos Removal</div>
+                            <div class="fs-20 py-3">We are licenced to inspect, remove and dispose of asbestos in commercial properties. Our team can complete an asbestos survey or audit of the building.</div>
+                            <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="px-7">
+                            <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Inspection</div>
+                            <div class="fs-20 py-3">Properly and safely inspecting your home or building for asbestos requires a trained team to ensure both that all dangerous traces are found and that the testing process is completed properly.</div>
+                            <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="px-7">
+                            <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Decontamination</div>
+                            <div class="fs-20 py-3">We will decontaminate the site, once we have removed the large pieces of asbestos, so that it is thoroughly clean of any waste and debris.</div>
+                            <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="px-7">
+                            <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Disposal</div>
+                            <div class="fs-20 py-3">Asbestos has special disposal facilities that we have access to, as they cannot be disposed off at any ordinary waste facility.</div>
+                            <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                                Enquire Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form" id="form">
+    <div class="container">
+        <div class="row justify-content-lg-end">
+            <div class="col-lg-4">
+                <div class="fs-65 text-white fw-900 text-uppercase font-agharti pb-3">Book In A <span class="gradient-text-bg">Free Inspection Today</span></div>
+                <form action="./src/form" method="POST">
+                    <div class="row justify-content-end gy-4">
+                        <div class="col-12">
+                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" name="phone" class="form-control" placeholder="Number" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" name="phone" class="form-control" placeholder="Number" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="date" name="suburb" class="form-control" placeholder="Suburb" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-5">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us bg-light">
+    <div class="container">
+        <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1 pb-5">Why Choose us?</div>
+
+        <div class="row g-5">
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-1.jpg", "lib", "w-100") ?>
+                    <div class="caption">Free Onsite Quote</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-2.jpg", "lib", "w-100") ?>
+                    <div class="caption">High-Tech Equipment</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-3.jpg", "lib", "w-100") ?>
+                    <div class="caption">Highly Competitive Pricing</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-4.jpg", "lib", "w-100") ?>
+                    <div class="caption">Licensed &amp; Fully Insured</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-5.jpg", "lib", "w-100") ?>
+                    <div class="caption">Qualified &amp; Highly Trained Team</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-6.jpg", "lib", "w-100") ?>
+                    <div class="caption">Fast Turn-Around</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-7.jpg", "lib", "w-100") ?>
+                    <div class="caption">Safe Work Practice</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="why-us-card">
+                    <?= renderImg("why-us-8.jpg", "lib", "w-100") ?>
+                    <div class="caption">Quality Services</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">

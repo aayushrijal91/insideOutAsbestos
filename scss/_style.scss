@@ -24,6 +24,96 @@ header {
     }
 }
 
+section.services {
+    padding: 76px 0;
+
+    .nav.nav-pills {
+        justify-content: space-between;
+        margin: 51px 0 55px;
+
+        li.nav-item a.nav-link {
+            border-radius: 10px;
+            font-size: 1.25rem;
+            height: 59px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+            font-weight: 500;
+
+            &.active {
+                color: $white;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-pane {
+            background: $primary;
+            border-radius: 50px;
+            padding: 17px;
+            color: $white;
+
+            .hero_img {
+                border-radius: 35px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+section.form {
+    padding: 97px 0;
+    background: imgUrl('form.jpg');
+    background-size: cover;
+
+    form {
+        input {
+            height: 76px;
+            border-radius: 5px;
+            border: 0;
+            padding: 8px 29px;
+            color: $black;
+            font-size: 1rem;
+            font-family: $font-open-sans;
+            
+            &::placeholder {
+                opacity: 0.8;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            height: 50px;
+        }
+    }
+}
+
+section.why-us {
+    padding: 76px 0;
+
+    .why-us-card {
+        border-radius: 20px;
+        overflow: hidden;
+
+        .caption {
+            background-color: $primary;
+            color: $white;
+            font-size: 1.25rem;
+            min-height: 98px;
+            display: flex;
+            align-items: center;
+            padding: 26px;
+        }
+    }
+
+}
+
 footer {
     font-size: 0.875rem;
     background-color: #221f1f;
