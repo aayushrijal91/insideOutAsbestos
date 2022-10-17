@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+$font-open-sans: "Open Sans", sans-serif;
+$font-proxima: "Proxima Nova", "sans-serif";
+$font-agharti: "Agharti", "sans-serif";
+
+$font-body: $font-proxima;
+
+$font-families: (
+    "open-sans": "Open Sans",
+    "proxima": "Proxima Nova",
+    "agharti": "Agharti",
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Proxima Nova", "Proxima Nova Light", 400);
+@include font-face("Proxima Nova", "Proxima Nova Regular", 500);
+@include font-face("Proxima Nova", "Proxima Nova Semibold", 600);
+@include font-face("Proxima Nova", "Proxima Nova Bold", 700);
+@include font-face("Proxima Nova", "Proxima Nova Black", 800);
+@include font-face("Agharti", "Agharti-HairUltraCondensed", 300);
+@include font-face("Agharti", "Agharti-ThinUltraCondensed", 400);
+@include font-face("Agharti", "Agharti-LightUltraCondensed", 500);
+@include font-face("Agharti", "Agharti-RegularUltraCondensed", 600);
+@include font-face("Agharti", "Agharti-DemiUltraCondensed", 700);
+@include font-face("Agharti", "Agharti-BoldUltraCondensed", 800);
+@include font-face("Agharti", "Agharti-BlackUltraCondensed", 900);
