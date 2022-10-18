@@ -34,6 +34,21 @@ $(() => {
     $("#show-slide-nav").on('click', function() {
         $('.slide-navigation').addClass('show');
     });
+
+    $('#license-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        // autoplay: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    })
 })
 
 $(window).on('scroll', () => {

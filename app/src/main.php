@@ -409,17 +409,10 @@
                 <div class="pointer pointer-10"></div>
                 <div class="pointer pointer-11"></div>
                 <div class="pointer pointer-12"></div>
-                <div class="pointer pointer-13"></div>
-                <div class="pointer pointer-14"></div>
-                <div class="pointer pointer-15"></div>
                 <div class="pointer pointer-16"></div>
-                <div class="pointer pointer-17"></div>
-                <div class="pointer pointer-18"></div>
                 <div class="pointer pointer-19"></div>
                 <div class="pointer pointer-20"></div>
-                <div class="pointer pointer-21"></div>
                 <div class="pointer pointer-22"></div>
-                <div class="pointer pointer-23"></div>
                 <div class="pointer pointer-24"></div>
                 <div class="pointer pointer-25"></div>
             </div>
@@ -471,7 +464,30 @@
 <section class="licenses">
     <div class="container">
         <div class="fs-65 text-uppercase fw-900 font-agharti lh-1 pb-5">We Are Fully Licensed &amp; Insured</div>
-        <div class="row justify-content-center justify-content-md-between align-items-center gy-5">
+        <div class="license-slider d-lg-none" id="license-slider">
+            <div class="d-flex justify-content-center">
+                <?= renderImg('safework-nsw.png', 'logo') ?>
+            </div>
+            <div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-auto"><?= renderImg('license.png', 'icons') ?></div>
+                    <div class="col col-md-auto">
+                        <div class="fw-700 fs-20 lh-1">Non-friable Asbestos Removal Licence</div>
+                        <div class="fs-20 fw-500">No. AD2060</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-auto font-agharti fs-65 fw-900 lh-1">35+</div>
+                    <div class="col-auto">
+                        <div class="fw-700 fs-20">Years Industry</div>
+                        <div class="fw-700 fs-20">Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center justify-content-md-between align-items-center gy-5 d-none d-lg-flex">
             <div class="col-auto">
                 <?= renderImg('safework-nsw.png', 'logo') ?>
             </div>
