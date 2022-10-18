@@ -102,7 +102,7 @@
                     <div class="fs-150 fw-800 font-agharti text-uppercase text-white lh-1"><span class="gradient-text-bg">Breathe Easy</span> with inside Outside</div>
                     <div class="text-white fs-30 fw-600 my-4 gradient-text-bg lh-1 d-inline-flex">Sydney's Leading Asbestos Removal Company</div>
                     <div class="pt-3">
-                        <a href="tel:<?= $phone_number ?>" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                        <a href="#contact-us" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
                             Contact Us
                         </a>
                     </div>
@@ -248,7 +248,8 @@
         <div class="row justify-content-lg-end">
             <div class="col-lg-6 col-xl-5">
                 <div class="fs-65 text-white fw-900 text-uppercase font-agharti pb-3">Book In A <span class="gradient-text-bg">Free Inspection Today</span></div>
-                <form action="./src/form" method="POST">
+                <form action="./src/form.php" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse1" class="recaptchaResponse">
                     <div class="row justify-content-end gy-3 gy-md-4">
                         <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -263,7 +264,7 @@
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-12">
-                            <input type="date" name="suburb" class="form-control" placeholder="Suburb" required>
+                            <input type="date" name="date" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-5">Book Now</button>
@@ -516,7 +517,8 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <form action="./src/form" method="POST">
+                <form action="./src/form.php" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse2" class="recaptchaResponse">
                     <div class="row justify-content-end gy-3 gy-md-4">
                         <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
@@ -531,7 +533,14 @@
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-12">
-                            <input type="date" name="suburb" class="form-control" placeholder="Suburb" required>
+                            <select name="service" class="form-control form-select" required>
+                                <option value="" selected disabled>Service</option>
+                                <option>Residential Asbestos Removal</option>
+                                <option>Commercial Asbestos Removal</option>
+                                <option>Asbestos Inspection</option>
+                                <option>Asbestos Decontamination</option>
+                                <option>Asbestos Disposal</option>
+                            </select>
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-4">Send enquiry</button>

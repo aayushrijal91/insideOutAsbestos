@@ -17,11 +17,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
-        $phone = $_POST['phone'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+        $name = strip_tags($_POST['name']);
+        $phone = strip_tags($_POST['phone']);
+        $email = strip_tags($_POST['email']);
+        $suburb = strip_tags($_POST['suburb']);
+        $date = isset($_POST['date']) ? strip_tags($_POST['date']) : "";
+        $service = isset($_POST['service']) ? strip_tags($_POST['service']) : "";
 
+        $msg = '';
+
+        if (!empty($date)) {
+            $msg = '<tr>' .
+                '<td>Date</td>' .
+                '<td><b>' . ($date) . '</b></td>' .
+                '</tr>';
+        } else if (!empty($service)) {
+            $msg = '<tr>' .
+                '<td>Service</td>' .
+                '<td><b>' . ($service) . '</b></td>' .
+                '</tr>';
+        }
+        
         $message = '<!DOCTYPE html>
                 <html>
                     <head>
@@ -46,20 +62,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                 <body><table><tbody>' .
             '<tr>' .
             '<td>Name</td>' .
-            '<td><b>' . strip_tags($name) . '</b></td>' .
+            '<td><b>' . $name . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>Phone</td>' .
-            '<td><b>' . strip_tags($phone) . '</b></td>' .
+            '<td><b>' . $phone . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>Email Address</td>' .
-            '<td><b>' . strip_tags($email) . '</b></td>' .
+            '<td><b>' . $email . '</b></td>' .
             '</tr>' .
-            '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
-            '</tr>' .
+            $msg .
             '</tbody></table></body></html>';
 
         $headers = "MIME-Version: 1.0\r\n" .

@@ -4,10 +4,10 @@ include __DIR__ . '/env.php';
 $site = "Inside Out Asbestos";
 $phone_number = "0414 650 750";
 $admin_email = 'arijal@aiims.com.au';
-$facebook = 'arijal@aiims.com.au';
-$instagram = 'arijal@aiims.com.au';
+$facebook = 'https://www.facebook.com/insideoutsideasbestos/';
+$instagram = 'https://www.instagram.com/insideoutsideasbestos/';
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@insideoutsideasbestos.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
