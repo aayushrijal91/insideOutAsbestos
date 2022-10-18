@@ -66,7 +66,7 @@
                 <div class="col-lg-6 px-0">
                     <div class="cta bg-primary">
                         <div class="row justify-content-end">
-                            <div class="col-lg-10 pe-4 pe-xl-8">
+                            <div class="col-lg-9 pe-4 pe-xl-6">
                                 <div class="row justify-content-between">
                                     <div class="col-auto d-flex align-items-end text-white py-5">
                                         <div class="fs-100 font-agharti fw-900 lh-08">35+</div>
@@ -95,19 +95,19 @@
         <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1">Services We Provide</div>
         <ul class="nav nav-pills bg-grey rounded-15 p-2" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1" aria-selected="true">Residential Asbestos Removal</a>
+                <button class="nav-link active" id="pills-1-tab" data-bs-toggle="tab" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Residential Asbestos Removal</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2" aria-selected="false">Commercial Asbestos Removal</a>
+                <button class="nav-link" id="pills-2-tab" data-bs-toggle="tab" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Commercial Asbestos Removal</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3" aria-selected="false">Asbestos Inspection</a>
+                <button class="nav-link" id="pills-3-tab" data-bs-toggle="tab" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Asbestos Inspection</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4" aria-selected="false">Asbestos Decontamination</a>
+                <button class="nav-link" id="pills-4-tab" data-bs-toggle="tab" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Asbestos Decontamination</button>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5" aria-selected="false">Asbestos Disposal</a>
+                <button class="nav-link" id="pills-5-tab" data-bs-toggle="tab" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Asbestos Disposal</button>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
