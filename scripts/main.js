@@ -1,6 +1,6 @@
 // AOS.init({ duration: 1500 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#services"], a[href="#contact-us"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -23,3 +23,11 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$('.asbestos-location-btn').on('click', function(){
+    $('.asbestos-location-btn').removeClass('active');
+    $(this).addClass('active');
+    
+    $('.pointer').css('display', 'none');
+    $(`.${$(this).attr('data-target')}`).css('display', 'block');
+})

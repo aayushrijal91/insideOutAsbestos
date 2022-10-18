@@ -10,13 +10,13 @@
                 <div class="col-5 col-lg-4 col-xxl-3">
                     <div class="row justify-content-between">
                         <div class="col-auto">
-                            <a href="" class="btn text-white fs-20 fw-600">Services</a>
+                            <a href="#services" class="btn text-white fs-20 fw-600">Services</a>
                         </div>
                         <div class="col-auto">
-                            <a href="" class="btn text-white fs-20 fw-600">Contact</a>
+                            <a href="#contact-us" class="btn text-white fs-20 fw-600">Contact</a>
                         </div>
                         <div class="col-auto">
-                            <a href="" class="btn text-white fs-20 fw-600">About</a>
+                            <a href="#about" class="btn text-white fs-20 fw-600">About</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
     </div>
 </header>
 
-<section class="services bg-light">
+<section class="services bg-light" id="services">
     <div class="container">
         <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1">Services We Provide</div>
         <ul class="nav nav-pills bg-grey rounded-15 p-2" id="pills-tab" role="tablist">
@@ -198,7 +198,7 @@
 <section class="form" id="form">
     <div class="container">
         <div class="row justify-content-lg-end">
-            <div class="col-lg-4">
+            <div class="col-lg-5">
                 <div class="fs-65 text-white fw-900 text-uppercase font-agharti pb-3">Book In A <span class="gradient-text-bg">Free Inspection Today</span></div>
                 <form action="./src/form" method="POST">
                     <div class="row justify-content-end gy-4">
@@ -210,9 +210,6 @@
                         </div>
                         <div class="col-12">
                             <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="col-12">
-                            <input type="tel" name="phone" class="form-control" placeholder="Number" required>
                         </div>
                         <div class="col-12">
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
@@ -287,11 +284,234 @@
     </div>
 </section>
 
+<section class="steps-to-keep-safe">
+    <div class="container">
+        <div class="fs-65 text-white text-uppercase fw-900 font-agharti lh-1">Our steps to keep you and your family safe</div>
+        <div class="row justify-content-around gy-7 py-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">1</div>
+                    <div class="text fs-30">Indicate the contaminated areas</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">2</div>
+                    <div class="text fs-30">Identify The Hazard</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">3</div>
+                    <div class="text fs-30">Remove The asbestos</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">4</div>
+                    <div class="text fs-30">Use wet &amp; dry vaccum to cleanup</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">5</div>
+                    <div class="text fs-30">Decontaminate the site</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="steps-card">
+                    <div class="fs-235 number">6</div>
+                    <div class="text fs-30">Dispose of the asbestos</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="#form" class="btn btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                    Enquire Now
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="tel: <?= $phone_number ?>" class="btn btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                    <?= $phone_number ?>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="asbestos-location">
+    <div class="container">
+        <div class="fs-65 text-primary text-uppercase fw-900 font-agharti lh-1 pb-5">Where asbestos could be found in your home</div>
+
+        <div class="d-flex justify-content-center">
+            <div class="house-wrapper">
+                <?= renderImg('house-model.png', 'lib') ?>
+                <div class="pointer pointer-1"></div>
+                <div class="pointer pointer-2"></div>
+                <div class="pointer pointer-3"></div>
+                <div class="pointer pointer-4"></div>
+                <div class="pointer pointer-5"></div>
+                <div class="pointer pointer-6"></div>
+                <div class="pointer pointer-7"></div>
+                <div class="pointer pointer-8"></div>
+                <div class="pointer pointer-9"></div>
+                <div class="pointer pointer-10"></div>
+                <div class="pointer pointer-11"></div>
+                <div class="pointer pointer-12"></div>
+                <div class="pointer pointer-13"></div>
+                <div class="pointer pointer-14"></div>
+                <div class="pointer pointer-15"></div>
+                <div class="pointer pointer-16"></div>
+                <div class="pointer pointer-17"></div>
+                <div class="pointer pointer-18"></div>
+                <div class="pointer pointer-19"></div>
+                <div class="pointer pointer-20"></div>
+                <div class="pointer pointer-21"></div>
+                <div class="pointer pointer-22"></div>
+                <div class="pointer pointer-23"></div>
+                <div class="pointer pointer-24"></div>
+                <div class="pointer pointer-25"></div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-1" class="asbestos-location-btn">Eaves & Gable Ends</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-2" class="asbestos-location-btn">Garage, Sheds & External Toilets</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-3" class="asbestos-location-btn">Vinyl floor tiles</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-4" class="asbestos-location-btn">Internal & external ventilators</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-5" class="asbestos-location-btn">Splashbacks</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-6" class="asbestos-location-btn">Carpet Underlay</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-7" class="asbestos-location-btn">Backing of Vinyl sheet flooring</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-8" class="asbestos-location-btn">Fireplace flues</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-9" class="asbestos-location-btn">Internal walls &amp; ceilings</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-10" class="asbestos-location-btn">Gutters</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-11" class="asbestos-location-btn">Downpipes</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-12" class="asbestos-location-btn">Internal Angle Mouldings</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-13" class="asbestos-location-btn">Fences</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-14" class="asbestos-location-btn">Compressed Asbestos Sheet Cement Flooring</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-15" class="asbestos-location-btn">Insulation Below Wood Heaters</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-16" class="asbestos-location-btn">External Angle Mouldings</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-17" class="asbestos-location-btn">Backing For electrical Meter Boards</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-18" class="asbestos-location-btn">Kennels</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-19" class="asbestos-location-btn">“tilux” marble finish wall panels</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-20" class="asbestos-location-btn">loose fill insulation in roof cavities</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-21" class="asbestos-location-btn">Insulation for hot water pipes &amp; Tanks</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-22" class="asbestos-location-btn">Ridge Capping</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-23" class="asbestos-location-btn">Buried &amp; Dumped waste materials</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-24" class="asbestos-location-btn">Corrugated Asbestos cement roofing</a></div>
+            <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-25" class="asbestos-location-btn">Wall sheeting</a></div>
+        </div>
+
+        <div class="row pt-7">
+            <div class="col-auto">
+                <a href="#form" class="btn btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                    Enquire Now
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="tel: <?= $phone_number ?>" class="btn btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
+                    <?= $phone_number ?>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="licenses">
+    <div class="container">
+        <div class="fs-65 text-uppercase fw-900 font-agharti lh-1 pb-5">We Are Fully Licensed &amp; Insured</div>
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 col-lg-auto">
+                <?= renderImg('safework-nsw.png', 'logo') ?>
+            </div>
+            <div class="col-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto"><?= renderImg('license.png', 'icons') ?></div>
+                    <div class="col-auto">
+                        <div class="fw-700 fs-20">Non-friable Asbestos Removal Licence</div>
+                        <div class="fs-20 fw-500">No. AD2060</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="row align-items-center">
+                    <div class="col-auto font-agharti fs-65 fw-900 lh-1">35+</div>
+                    <div class="col-auto">
+                        <div class="fw-700 fs-20">Years Industry</div>
+                        <div class="fw-700 fs-20">Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-us" id="contact-us">
+    <div class="container">
+        <div class="row gx-xl-7">
+            <div class="col-lg-6">
+                <div class="font-agharti lh-1 fs-65 fw-900 text-uppercase pb-4">Contact Us</div>
+                <p class="fs-20 lh-1218 fw-700">We have been in the Asbestos industry for over 30 years. We are equipped with the latest equipment and technology to handle any asbestos job.</p>
+                <p class="fs-20 lh-1218">Safety first attitude - we uphold all required safety procedures and use appropriate equipment to ensure asbestos and other materials are disposed of safely off your property.</p>
+                <p class="fs-20 lh-1218">We complete small scale residential demolitions including kitchens, bathrooms, laundries, sheds and garages as well as commercial shops and strip outs. </p>
+                <div class="pt-3">
+                    <a href="tel: <?= $phone_number ?>" class="btn d-inline-flex rounded-5 fw-600 text-white py-3 px-0 fs-20">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4588 13.0876L13.0626 11.6543C12.7098 11.5043 12.3146 11.4696 11.9387 11.5556C11.5629 11.6415 11.2276 11.8432 10.9852 12.1293L10.0064 13.2918C8.40185 12.3136 7.03593 11.0208 6.00027 9.5001L7.224 8.57028C7.52481 8.34003 7.73697 8.0217 7.82741 7.66491C7.91785 7.30812 7.88149 6.93292 7.72399 6.59782L6.22652 3.36304C6.05824 3.00284 5.76076 2.71114 5.38713 2.53997C5.0135 2.36879 4.58801 2.32928 4.18656 2.42846L1.31161 3.14097C0.894524 3.2435 0.531903 3.48859 0.293191 3.82931C0.0544787 4.17004 -0.0435462 4.58244 0.0178878 4.98755C0.553434 8.52014 2.27891 11.7929 4.93602 14.316C7.59313 16.839 11.0389 18.4766 14.7576 18.9836C15.1838 19.0409 15.6172 18.947 15.9751 18.7198C16.333 18.4926 16.5902 18.1481 16.6976 17.7521L17.4475 15.0209C17.5519 14.6395 17.5096 14.2354 17.3284 13.881C17.1471 13.5267 16.8388 13.2453 16.4588 13.0876Z" fill="white" />
+                            <path d="M20 9.5001H17.5C17.4981 7.61099 16.7073 5.7998 15.3012 4.464C13.8951 3.12819 11.9887 2.37691 10.0002 2.37503V0C12.6514 0.00282878 15.1932 1.00464 17.0678 2.78564C18.9425 4.56664 19.997 6.98139 20 9.5001Z" fill="white" />
+                            <path d="M15.0001 9.5001H12.5001C12.5001 8.87021 12.2368 8.26611 11.7679 7.82071C11.2991 7.3753 10.6632 7.12508 10.0002 7.12508V4.75005C11.3263 4.75005 12.598 5.2505 13.5357 6.14131C14.4733 7.03212 15.0001 8.24031 15.0001 9.5001Z" fill="white" />
+                        </svg>
+                        <span class="ps-3"><?= $phone_number ?></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form action="./src/form" method="POST">
+                    <div class="row justify-content-end gy-4">
+                        <div class="col-12">
+                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" name="phone" class="form-control" placeholder="Number" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="date" name="suburb" class="form-control" placeholder="Suburb" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-4">Send enquiry</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-areas">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="fs-65 text-uppercase fw-900 font-agharti lh-1 pb-5 text-primary">We Service Sydney Metro, Northern Beaches and Nearby areas</div>
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212086.49889468186!2d151.1042948261236!3d-33.84193892717345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1666053244847!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">
             <div class="col-auto">
-                <div class="row gx-2 gx-md-3 text-white justify-content-center">
+                <div class="row gx-2 gx-md-3 gx-xl-5 text-white justify-content-center">
                     <div class="col-12 text-center pb-3 d-lg-none">
                         <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                             <?= renderImg("aiims.png", "logo") ?>

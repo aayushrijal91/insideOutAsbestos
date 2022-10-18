@@ -38,7 +38,7 @@ $container-max-widths: (
     md: 740px,
     lg: 1280px,
     xl: 1442px,
-    xxl: 1632px,
+    xxl: 1500px,
     ) !default;
 
 $spacer: 1rem !default;
@@ -77,7 +77,7 @@ $utilities: map-merge(("line-height":(property: line-height,
                     1:1,
                     2:2,
                     "08": 0.8,
-                    3:1.29,
+                    "1218":1.218,
                     4:4,
                 )),
             "rounded": (property: border-radius,
@@ -119,6 +119,7 @@ $utilities: map-merge(("line-height":(property: line-height,
                 class: fs,
                 responsive: true,
                 values: (
+                    235: 14.6875rem, //235px
                     150: 9.375rem, // 150px
                     100: 6.25rem, // 100px
                     128: 8rem, // 128px
