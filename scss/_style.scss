@@ -2,6 +2,46 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+.slide-navigation {
+    background: $primary;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    transform: translateY(-100%);
+    transition: 0.2s all;
+
+    .main-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        ul.nav-list {
+            padding-inline-start: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style: none;
+                padding: 16px 0;
+                
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    &.show {
+        transform: translateY(0);
+    }
+}
+
 header {
     background: imgUrl("header.jpg") top left;
     background-size: cover;
@@ -13,6 +53,10 @@ header {
             height: 40px;
             width: 40px;
         }
+
+        @include media-breakpoint-down(sm) {
+            padding: 48px 0;
+        }
     }
 
     .banner {
@@ -20,6 +64,15 @@ header {
 
         .cta {
             border-radius: 0 20px 20px 0;
+            
+            @include media-breakpoint-down(sm) {
+                border-radius: 0;
+                padding: 16px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 64px 0;
         }
     }
 }
@@ -30,6 +83,10 @@ section.services {
     .nav.nav-pills {
         justify-content: space-between;
         margin: 51px 0 55px;
+
+        @include media-breakpoint-down(sm) {
+            margin: 24px 0;
+        }
 
         li.nav-item button.nav-link {
             border-radius: 10px;
@@ -45,6 +102,11 @@ section.services {
                 color: $white;
                 font-weight: 400;
             }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+                height: 40px;
+            }
         }
     }
 
@@ -55,9 +117,17 @@ section.services {
             padding: 17px;
             color: $white;
 
+            @include media-breakpoint-down(sm) {
+                border-radius: 20px;
+            }
+
             .hero_img {
                 border-radius: 35px;
                 width: 100%;
+
+                @include media-breakpoint-down(sm) {
+                    border-radius: 8px;
+                }
             }
         }
     }
@@ -65,8 +135,13 @@ section.services {
 
 section.form {
     padding: 97px 0;
-    background: imgUrl('form.jpg');
+    background: imgUrl('form.jpg') center;
     background-size: cover;
+
+    @include media-breakpoint-down(sm) {
+        padding: 75px 0;
+        background-position-x: right;
+    }
 
     form {
         input {
@@ -85,6 +160,10 @@ section.form {
             &:focus {
                 outline: none;
                 box-shadow: none;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 50px;
             }
         }
 
@@ -109,6 +188,16 @@ section.why-us {
             display: flex;
             align-items: center;
             padding: 26px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 16px;
+                font-size: 0.875rem;
+                min-height: 70px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            border-radius: 10px;
         }
     }
 }
@@ -139,6 +228,12 @@ section.steps-to-keep-safe {
             max-width: 193px;
             font-weight: 600;
             line-height: 1.218;
+            font-size: 1.875rem;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+                max-width: 150px;
+            }
         }
     }
 }
@@ -157,6 +252,11 @@ section.asbestos-location {
             border-radius: 50%;
             position: absolute;
             display: none;
+
+            @include media-breakpoint-down(sm) {
+                height: 16px;
+                width: 16px;
+            }
 
             &.pointer-1 {
                 right: 29%;
@@ -306,6 +406,12 @@ section.asbestos-location {
             background: $primary;
             color: $white;
         }
+
+        @include media-breakpoint-down(sm) {
+            height: 40px;
+            font-size: 0.875rem;
+            padding: 16px 8px;
+        }
     }
 }
 
@@ -339,6 +445,10 @@ section.contact-us {
                 outline: none;
                 box-shadow: none;
             }
+
+            @include media-breakpoint-down(sm) {
+                height: 50px;
+            }
         }
 
         button {
@@ -352,10 +462,19 @@ section.services-areas {
     background-size: cover;
     padding: 96px 0 126px;
 
+    @include media-breakpoint-down(sm) {
+        background: $dark;
+        padding: 75px 0;
+    }
+
     .map {
         height: 554px;
         width: 554px;
         border-radius: 40px;
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+        }
     }
 }
 
@@ -365,4 +484,8 @@ footer {
     padding: 36px 0;
     font-family: $font-open-sans;
     color: $light;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
 }

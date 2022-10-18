@@ -18,6 +18,22 @@ $(() => {
         $('.pointer').css('display', 'none');
         $(`.${$(this).attr('data-target')}`).css('display', 'block');
     });
+
+    $("#hide-slide-nav").on('click', function() {
+        $('.slide-navigation').removeClass('show');
+    });
+
+    $('.slide-navigation ul.nav-list a').on('click', function() {
+        $('.slide-navigation').removeClass('show');
+    });
+    
+    $('#slide-nav-enquire').on('click', function() {
+        $('.slide-navigation').removeClass('show');
+    });
+
+    $("#show-slide-nav").on('click', function() {
+        $('.slide-navigation').addClass('show');
+    });
 })
 
 $(window).on('scroll', () => {

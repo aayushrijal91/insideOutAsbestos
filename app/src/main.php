@@ -1,13 +1,61 @@
+<div class="slide-navigation">
+    <div class="container h-100">
+        <div class="main-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-5">
+                    <a href="./">
+                        <?= renderImg("logo.png", "logo") ?>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="javascript:void(0)" id="hide-slide-nav">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 18.8086C16.1064 15.915 6.46099 6.26959 2 1.80859" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            <path d="M19 1.80859C16.1064 4.70221 6.46099 14.3476 2 18.8086" stroke="white" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="row gy-4">
+                <div class="col-12 text-center">
+                    <a href="tel:<?= $phone_number ?>" class="btn d-inline-flex rounded-pill btn-secondary rounded-0 text-white px-5">
+                        <?= $phone_number ?>
+                    </a>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="#form" id="slide-nav-enquire" class="btn d-inline-flex rounded-pill border-white rounded-0 text-white px-5">
+                        Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <header>
     <div class="navigation-bar">
         <div class="container">
-            <div class="row justify-content-center justify-content-lg-between align-items-center">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-auto">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
                 </div>
-                <div class="col-5 col-lg-4 col-xxl-3">
+                <div class="col-auto">
+                    <a href="javascript:void(0)" id="show-slide-nav" class="d-xl-none">
+                        <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 2.21289C21.0851 2.21289 8.03546 2.21289 2 2.21289" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            <path d="M25 12C21.0851 12 8.03546 12 2 12" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            <path d="M25 21.7876C21.0851 21.7876 8.03546 21.7876 2 21.7876" stroke="white" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-5 col-lg-4 col-xxl-3 d-none d-md-block">
                     <div class="row justify-content-between">
                         <div class="col-auto">
                             <a href="#services" class="btn text-white fs-20 fw-600">Services</a>
@@ -20,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-none d-md-block">
                     <div class="row gx-3 justify-content-center align-items-center">
                         <div class="col-12 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-5 text-white fw-600 py-3 px-md-4 fs-20">
@@ -65,18 +113,18 @@
             <div class="row pt-6">
                 <div class="col-lg-6 px-0">
                     <div class="cta bg-primary">
-                        <div class="row justify-content-end">
-                            <div class="col-lg-9 pe-4 pe-xl-6">
-                                <div class="row justify-content-between">
-                                    <div class="col-auto d-flex align-items-end text-white py-5">
+                        <div class="row gx-0 justify-content-end">
+                            <div class="col-lg-9 pe-md-4 pe-xl-6">
+                                <div class="row justify-content-around justify-content-md-between">
+                                    <div class="col-auto d-flex align-items-end text-white py-4 py-md-5">
                                         <div class="fs-100 font-agharti fw-900 lh-08">35+</div>
                                         <div class="fw-700 lh-1 ps-2">Years<br> Industry<br> Experience</div>
                                     </div>
-                                    <div class="col-auto d-flex align-items-end text-white py-5">
+                                    <div class="col-auto d-flex align-items-end text-white py-4 py-md-5">
                                         <div class="fs-100 font-agharti fw-900 lh-08">24HR</div>
                                         <div class="fw-700 lh-1 ps-2">Response<br> Time</div>
                                     </div>
-                                    <div class="col-auto d-flex align-items-end text-white py-5">
+                                    <div class="col-auto d-flex align-items-end text-white py-4 py-md-5">
                                         <div class="fs-100 font-agharti fw-900 lh-08">FREE</div>
                                         <div class="fw-700 lh-1 ps-2">Onsite<br> Quote</div>
                                     </div>
@@ -117,7 +165,7 @@
                         <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
                     </div>
                     <div class="col-lg-6">
-                        <div class="px-7">
+                        <div class="py-5 px-md-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Residential Asbestos Removal</div>
                             <div class="fs-20 py-3">If you notice even the slightest amount of asbestos in your home, you must remove it immediately. Don’t put your family or yourself at risk.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -130,10 +178,10 @@
             <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                        <?= renderImg("service-2.jpg", "lib", "hero_img") ?>
                     </div>
                     <div class="col-lg-6">
-                        <div class="px-7">
+                        <div class="py-5 px-md-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Commercial Asbestos Removal</div>
                             <div class="fs-20 py-3">We are licenced to inspect, remove and dispose of asbestos in commercial properties. Our team can complete an asbestos survey or audit of the building.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -146,10 +194,10 @@
             <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                        <?= renderImg("service-3.jpg", "lib", "hero_img") ?>
                     </div>
                     <div class="col-lg-6">
-                        <div class="px-7">
+                        <div class="py-5 px-md-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Inspection</div>
                             <div class="fs-20 py-3">Properly and safely inspecting your home or building for asbestos requires a trained team to ensure both that all dangerous traces are found and that the testing process is completed properly.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -162,10 +210,10 @@
             <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                        <?= renderImg("service-4.jpg", "lib", "hero_img") ?>
                     </div>
                     <div class="col-lg-6">
-                        <div class="px-7">
+                        <div class="py-5 px-md-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Decontamination</div>
                             <div class="fs-20 py-3">We will decontaminate the site, once we have removed the large pieces of asbestos, so that it is thoroughly clean of any waste and debris.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -178,10 +226,10 @@
             <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
+                        <?= renderImg("service-5.jpg", "lib", "hero_img") ?>
                     </div>
                     <div class="col-lg-6">
-                        <div class="px-7">
+                        <div class="py-5 px-md-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Disposal</div>
                             <div class="fs-20 py-3">Asbestos has special disposal facilities that we have access to, as they cannot be disposed off at any ordinary waste facility.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -201,7 +249,7 @@
             <div class="col-lg-5">
                 <div class="fs-65 text-white fw-900 text-uppercase font-agharti pb-3">Book In A <span class="gradient-text-bg">Free Inspection Today</span></div>
                 <form action="./src/form" method="POST">
-                    <div class="row justify-content-end gy-4">
+                    <div class="row justify-content-end gy-3 gy-md-4">
                         <div class="col-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
                         </div>
@@ -231,7 +279,7 @@
     <div class="container">
         <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1 pb-5">Why Choose us?</div>
 
-        <div class="row g-5">
+        <div class="row g-3 g-md-5">
             <div class="col-6 col-md-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-1.jpg", "lib", "w-100") ?>
@@ -286,42 +334,42 @@
 
 <section class="steps-to-keep-safe">
     <div class="container">
-        <div class="fs-65 text-white text-uppercase fw-900 font-agharti lh-1">Our steps to keep you and your family safe</div>
+        <div class="fs-65 text-white text-uppercase fw-900 font-agharti lh-1 text-center text-md-start">Our steps to keep you and your family safe</div>
         <div class="row justify-content-around gy-7 py-5">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">1</div>
-                    <div class="text fs-30">Indicate the contaminated areas</div>
+                    <div class="text">Indicate the contaminated areas</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">2</div>
-                    <div class="text fs-30">Identify The Hazard</div>
+                    <div class="text">Identify The Hazard</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">3</div>
-                    <div class="text fs-30">Remove The asbestos</div>
+                    <div class="text">Remove The asbestos</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">4</div>
-                    <div class="text fs-30">Use wet &amp; dry vaccum to cleanup</div>
+                    <div class="text">Use wet &amp; dry vaccum to cleanup</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">5</div>
-                    <div class="text fs-30">Decontaminate the site</div>
+                    <div class="text">Decontaminate the site</div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-6 col-lg-4">
                 <div class="steps-card">
                     <div class="fs-235 number">6</div>
-                    <div class="text fs-30">Dispose of the asbestos</div>
+                    <div class="text">Dispose of the asbestos</div>
                 </div>
             </div>
         </div>
@@ -343,7 +391,7 @@
 
 <section class="asbestos-location">
     <div class="container">
-        <div class="fs-65 text-primary text-uppercase fw-900 font-agharti lh-1 pb-5">Where asbestos could be found in your home</div>
+        <div class="fs-65 text-primary text-uppercase fw-900 font-agharti lh-1 pb-5 text-center text-md-start">Where asbestos could be found in your home</div>
 
         <div class="d-flex justify-content-center">
             <div class="house-wrapper">
@@ -404,7 +452,7 @@
             <div class="col-auto"><a href="javascript:void(0)" data-target="pointer-25" class="asbestos-location-btn">Wall sheeting</a></div>
         </div>
 
-        <div class="row pt-7">
+        <div class="row pt-5 pt-md-7">
             <div class="col-auto">
                 <a href="#form" class="btn btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
                     Enquire Now
@@ -422,15 +470,15 @@
 <section class="licenses">
     <div class="container">
         <div class="fs-65 text-uppercase fw-900 font-agharti lh-1 pb-5">We Are Fully Licensed &amp; Insured</div>
-        <div class="row justify-content-between align-items-center">
-            <div class="col-md-6 col-lg-auto">
+        <div class="row justify-content-center justify-content-md-between align-items-center gy-5">
+            <div class="col-auto">
                 <?= renderImg('safework-nsw.png', 'logo') ?>
             </div>
             <div class="col-auto">
                 <div class="row align-items-center">
                     <div class="col-auto"><?= renderImg('license.png', 'icons') ?></div>
-                    <div class="col-auto">
-                        <div class="fw-700 fs-20">Non-friable Asbestos Removal Licence</div>
+                    <div class="col col-md-auto">
+                        <div class="fw-700 fs-20 lh-1">Non-friable Asbestos Removal Licence</div>
                         <div class="fs-20 fw-500">No. AD2060</div>
                     </div>
                 </div>
@@ -450,7 +498,7 @@
 
 <section class="contact-us" id="contact-us">
     <div class="container">
-        <div class="row gx-xl-7">
+        <div class="row gx-xl-7 gy-5">
             <div class="col-lg-6">
                 <div class="font-agharti lh-1 fs-65 fw-900 text-uppercase pb-4">Contact Us</div>
                 <p class="fs-20 lh-1218 fw-700">We have been in the Asbestos industry for over 30 years. We are equipped with the latest equipment and technology to handle any asbestos job.</p>
@@ -469,7 +517,7 @@
             </div>
             <div class="col-lg-6">
                 <form action="./src/form" method="POST">
-                    <div class="row justify-content-end gy-4">
+                    <div class="row justify-content-end gy-3 gy-md-4">
                         <div class="col-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
                         </div>
@@ -509,14 +557,9 @@
 
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center">
+        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
             <div class="col-auto">
                 <div class="row gx-2 gx-md-3 gx-xl-5 text-white justify-content-center">
-                    <div class="col-12 text-center pb-3 d-lg-none">
-                        <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                            <?= renderImg("aiims.png", "logo") ?>
-                        </a>
-                    </div>
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto">|</div>
                     <div class="col-auto text-center"><?= $site ?></div>
@@ -525,7 +568,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
+            <div class="col-auto">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                     <?= renderImg("aiims.png", "logo") ?>
                 </a>
