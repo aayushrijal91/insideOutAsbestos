@@ -55,7 +55,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-5 col-lg-4 col-xxl-3 d-none d-md-block">
+                <div class="col-5 col-lg-4 col-xxl-3 d-none d-xl-block">
                     <div class="row justify-content-between">
                         <div class="col-auto">
                             <a href="#services" class="btn text-white fs-20 fw-600">Services</a>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-xl-block">
                     <div class="row gx-3 justify-content-center align-items-center">
                         <div class="col-12 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-secondary rounded-5 text-white fw-600 py-3 px-md-4 fs-20">
@@ -98,7 +98,7 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-8 col-xl-6">
                     <div class="fs-150 fw-800 font-agharti text-uppercase text-white lh-1"><span class="gradient-text-bg">Breathe Easy</span> with inside Outside</div>
                     <div class="text-white fs-30 fw-600 my-4 gradient-text-bg lh-1 d-inline-flex">Sydney's Leading Asbestos Removal Company</div>
                     <div class="pt-3">
@@ -111,11 +111,11 @@
         </div>
         <div class="container-fluid">
             <div class="row pt-6">
-                <div class="col-lg-6 px-0">
+                <div class="col-lg-9 col-xl-7 col-xxl-6 px-0">
                     <div class="cta bg-primary">
                         <div class="row gx-0 justify-content-end">
-                            <div class="col-lg-9 pe-md-4 pe-xl-6">
-                                <div class="row justify-content-around justify-content-md-between">
+                            <div class="col-lg-11 col-xxl-9 pe-md-4 pe-lg-6">
+                                <div class="row justify-content-around justify-content-lg-between">
                                     <div class="col-auto d-flex align-items-end text-white py-4 py-md-5">
                                         <div class="fs-100 font-agharti fw-900 lh-08">35+</div>
                                         <div class="fw-700 lh-1 ps-2">Years<br> Industry<br> Experience</div>
@@ -161,11 +161,11 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <?= renderImg("service-1.jpg", "lib", "hero_img") ?>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="py-5 px-md-7 text-center text-md-start">
+                    <div class="col-xl-6">
+                        <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Residential Asbestos Removal</div>
                             <div class="fs-20 py-3">If you notice even the slightest amount of asbestos in your home, you must remove it immediately. Don’t put your family or yourself at risk.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -177,11 +177,11 @@
             </div>
             <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <?= renderImg("service-2.jpg", "lib", "hero_img") ?>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="py-5 px-md-7 text-center text-md-start">
+                    <div class="col-xl-6">
+                        <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Commercial Asbestos Removal</div>
                             <div class="fs-20 py-3">We are licenced to inspect, remove and dispose of asbestos in commercial properties. Our team can complete an asbestos survey or audit of the building.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -193,11 +193,11 @@
             </div>
             <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <?= renderImg("service-3.jpg", "lib", "hero_img") ?>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="py-5 px-md-7 text-center text-md-start">
+                    <div class="col-xl-6">
+                        <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Inspection</div>
                             <div class="fs-20 py-3">Properly and safely inspecting your home or building for asbestos requires a trained team to ensure both that all dangerous traces are found and that the testing process is completed properly.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -209,11 +209,11 @@
             </div>
             <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <?= renderImg("service-4.jpg", "lib", "hero_img") ?>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="py-5 px-md-7 text-center text-md-start">
+                    <div class="col-xl-6">
+                        <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Decontamination</div>
                             <div class="fs-20 py-3">We will decontaminate the site, once we have removed the large pieces of asbestos, so that it is thoroughly clean of any waste and debris.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -225,11 +225,11 @@
             </div>
             <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6">
                         <?= renderImg("service-5.jpg", "lib", "hero_img") ?>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="py-5 px-md-7 text-center text-md-start">
+                    <div class="col-xl-6">
+                        <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Asbestos Disposal</div>
                             <div class="fs-20 py-3">Asbestos has special disposal facilities that we have access to, as they cannot be disposed off at any ordinary waste facility.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
@@ -246,20 +246,20 @@
 <section class="form" id="form">
     <div class="container">
         <div class="row justify-content-lg-end">
-            <div class="col-lg-5">
+            <div class="col-lg-6 col-xl-5">
                 <div class="fs-65 text-white fw-900 text-uppercase font-agharti pb-3">Book In A <span class="gradient-text-bg">Free Inspection Today</span></div>
                 <form action="./src/form" method="POST">
                     <div class="row justify-content-end gy-3 gy-md-4">
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="tel" name="phone" class="form-control" placeholder="Number" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-12">
@@ -279,50 +279,50 @@
     <div class="container">
         <div class="text-primary text-uppercase font-agharti fs-65 fw-900 lh-1 pb-5">Why Choose us?</div>
 
-        <div class="row g-3 g-md-5">
-            <div class="col-6 col-md-4 col-xl-3">
+        <div class="row g-3 g-xxl-5">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-1.jpg", "lib", "w-100") ?>
                     <div class="caption">Free Onsite Quote</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-2.jpg", "lib", "w-100") ?>
                     <div class="caption">High-Tech Equipment</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-3.jpg", "lib", "w-100") ?>
                     <div class="caption">Highly Competitive Pricing</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-4.jpg", "lib", "w-100") ?>
                     <div class="caption">Licensed &amp; Fully Insured</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-5.jpg", "lib", "w-100") ?>
                     <div class="caption">Qualified &amp; Highly Trained Team</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-6.jpg", "lib", "w-100") ?>
                     <div class="caption">Fast Turn-Around</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-7.jpg", "lib", "w-100") ?>
                     <div class="caption">Safe Work Practice</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-xl-3">
+            <div class="col-6 col-lg-4 col-xl-3">
                 <div class="why-us-card">
                     <?= renderImg("why-us-8.jpg", "lib", "w-100") ?>
                     <div class="caption">Quality Services</div>
@@ -498,7 +498,7 @@
 
 <section class="contact-us" id="contact-us">
     <div class="container">
-        <div class="row gx-xl-7 gy-5">
+        <div class="row gx-xxl-7 gy-5">
             <div class="col-lg-6">
                 <div class="font-agharti lh-1 fs-65 fw-900 text-uppercase pb-4">Contact Us</div>
                 <p class="fs-20 lh-1218 fw-700">We have been in the Asbestos industry for over 30 years. We are equipped with the latest equipment and technology to handle any asbestos job.</p>
@@ -518,16 +518,16 @@
             <div class="col-lg-6">
                 <form action="./src/form" method="POST">
                     <div class="row justify-content-end gy-3 gy-md-4">
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="name" class="form-control" placeholder="Name" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="tel" name="phone" class="form-control" placeholder="Number" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-md-6 col-lg-12">
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-12">
@@ -557,7 +557,7 @@
 
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
+        <div class="row justify-content-center justify-content-md-between align-items-center gy-4">
             <div class="col-auto">
                 <div class="row gx-2 gx-md-3 gx-xl-5 text-white justify-content-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
