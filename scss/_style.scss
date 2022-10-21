@@ -147,8 +147,18 @@ section.form {
     }
 
     form {
-        .form-control {
+        input,
+        select {
             height: 76px;
+
+            @include media-breakpoint-down(sm) {
+                height: 50px;
+            }
+        }
+
+        input,
+        select,
+        textarea {
             border-radius: 5px;
             border: 0;
             padding: 8px 29px;
@@ -163,10 +173,6 @@ section.form {
             &:focus {
                 outline: none;
                 box-shadow: none;
-            }
-
-            @include media-breakpoint-down(sm) {
-                height: 50px;
             }
         }
 
@@ -410,8 +416,18 @@ section.contact-us {
     padding: 75px 0;
 
     form {
-        .form-control {
+        input,
+        select {
             height: 76px;
+
+            @include media-breakpoint-down(sm) {
+                height: 50px;
+            }
+        }
+
+        input,
+        select,
+        textarea {
             border-radius: 5px;
             border: 0;
             padding: 8px 29px;
@@ -426,10 +442,6 @@ section.contact-us {
             &:focus {
                 outline: none;
                 box-shadow: none;
-            }
-
-            @include media-breakpoint-down(sm) {
-                height: 50px;
             }
         }
 

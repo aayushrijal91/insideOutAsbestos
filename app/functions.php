@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Inside Out Asbestos";
+$site = "Inside Outside Asbestos Removal";
 $phone_number = "0480 007 972";
 $admin_email = 'info@insideoutsideasbestos.com.au';
 $facebook = 'https://www.facebook.com/insideoutsideasbestos/';

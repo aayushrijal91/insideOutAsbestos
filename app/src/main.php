@@ -145,6 +145,7 @@
                         <div class="py-5 px-md-5 px-lg-7 text-center text-md-start">
                             <div class="font-agharti fw-900 fs-65 text-uppercase lh-1">Commercial Asbestos Removal</div>
                             <div class="fs-20 py-3">We are licenced to inspect, remove and dispose of asbestos in commercial properties. Our team can complete an asbestos survey or audit of the building.</div>
+                            <div class="fs-20 pb-3">No job is too big or small.</div>
                             <a href="#form" class="btn d-inline-flex btn-secondary rounded-5 fw-600 text-white py-3 px-md-4 fs-20">
                                 Enquire Now
                             </a>
@@ -225,10 +226,20 @@
                             <input type="text" name="suburb" class="form-control" placeholder="Suburb" required>
                         </div>
                         <div class="col-12">
-                            <input type="date" name="date" class="form-control" placeholder="Suburb" required>
+                            <select name="service" class="form-control form-select" required>
+                                <option value="" selected disabled>Service</option>
+                                <option>Residential Asbestos Removal</option>
+                                <option>Commercial Asbestos Removal</option>
+                                <option>Asbestos Inspection</option>
+                                <option>Asbestos Decontamination</option>
+                                <option>Asbestos Disposal</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="comment" class="form-control" rows="4" placeholder="Description"></textarea>
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-5">Book Now</button>
+                            <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-5">Request a Quote</button>
                         </div>
                     </div>
                 </form>
@@ -434,7 +445,7 @@
                     <div class="col-auto"><?= renderImg('license.png', 'icons') ?></div>
                     <div class="col col-md-auto">
                         <div class="fw-700 fs-20 lh-1">Non-friable Asbestos Removal Licence</div>
-                        <div class="fs-20 fw-500">No. AD2060</div>
+                        <div class="fs-20 fw-500">No. AD206093</div>
                     </div>
                 </div>
             </div>
@@ -457,7 +468,7 @@
                     <div class="col-auto"><?= renderImg('license.png', 'icons') ?></div>
                     <div class="col col-md-auto">
                         <div class="fw-700 fs-20 lh-1">Non-friable Asbestos Removal Licence</div>
-                        <div class="fs-20 fw-500">No. AD2060</div>
+                        <div class="fs-20 fw-500">No. AD206093</div>
                     </div>
                 </div>
             </div>
@@ -518,6 +529,9 @@
                                 <option>Asbestos Decontamination</option>
                                 <option>Asbestos Disposal</option>
                             </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea name="comment" class="form-control" rows="4" placeholder="Description"></textarea>
                         </div>
                         <div class="col-auto">
                             <button type="submit" class="btn btn-secondary text-white fs-20 fw-600 px-4">Send enquiry</button>

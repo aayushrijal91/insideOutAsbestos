@@ -21,22 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $phone = strip_tags($_POST['phone']);
         $email = strip_tags($_POST['email']);
         $suburb = strip_tags($_POST['suburb']);
-        $date = isset($_POST['date']) ? strip_tags($_POST['date']) : "";
-        $service = isset($_POST['service']) ? strip_tags($_POST['service']) : "";
-
-        $msg = '';
-
-        if (!empty($date)) {
-            $msg = '<tr>' .
-                '<td>Date</td>' .
-                '<td><b>' . ($date) . '</b></td>' .
-                '</tr>';
-        } else if (!empty($service)) {
-            $msg = '<tr>' .
-                '<td>Service</td>' .
-                '<td><b>' . ($service) . '</b></td>' .
-                '</tr>';
-        }
+        $service = strip_tags($_POST['service']);
+        $comment = strip_tags($_POST['comment']);
         
         $message = '<!DOCTYPE html>
                 <html>
@@ -72,13 +58,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<td>Email Address</td>' .
             '<td><b>' . $email . '</b></td>' .
             '</tr>' .
-            $msg .
+            '<tr>' .
+            '<td>Suburb</td>' .
+            '<td><b>' . $suburb . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Service</td>' .
+            '<td><b>' . $service . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Description</td>' .
+            '<td><b>' . $comment . '</b></td>' .
+            '</tr>' .
             '</tbody></table></body></html>';
 
         $headers = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
             "From: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
-            // "Bcc: " . $bcc_email . "\r\n" .
             "Reply-To: " . $site . " <" . $no_reply_email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);
